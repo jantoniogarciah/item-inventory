@@ -7,13 +7,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "items")
 public class Item {
 
+ @ApiModelProperty(notes = "The database generated item number")
  private long itemNo;
+ @ApiModelProperty(notes = "The item name")
  private String itemName;
+ @ApiModelProperty(notes = "The item amount in stock")
  private int itemAmount;
+ @ApiModelProperty(notes = "The item inventort code")
  private String itemInventoryCode;
  
  public Item() {
