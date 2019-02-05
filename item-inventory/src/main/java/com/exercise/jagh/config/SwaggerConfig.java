@@ -30,8 +30,8 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo apiEndPointsInfo() {
 
-        return new ApiInfoBuilder().title("Spring Boot REST API")
-            .description("Item REST CRUD")
+        return new ApiInfoBuilder().title("Exercise Jose Garcia Spring Boot REST API")
+            .description("Item Inventory Information")
             .contact(new Contact("Jose Antonio Garcia", "https://www.linkedin.com/in/joseantoniogarciah/", "jantonio.garciah@yahoo.com"))
             .build();
     }
